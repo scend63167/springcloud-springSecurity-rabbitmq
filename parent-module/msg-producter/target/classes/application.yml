@@ -1,0 +1,17 @@
+# 注册到 eureka server 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: cli-01
+server:
+  port: 8773
+spring:
+    application:
+      name: msg-producter
+    rabbitmq:
+      host: 39.96.195.193
+      port: 5672
+      username: admin
+      password: whispere
