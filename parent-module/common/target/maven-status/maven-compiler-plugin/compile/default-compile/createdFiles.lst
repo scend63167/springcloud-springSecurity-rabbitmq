@@ -1,0 +1,10 @@
+com\kosinza\common\dao\OrderMasterDao.class
+com\kosinza\common\dao\OrderDetailDao.class
+com\kosinza\common\dao\ProductCategoryDao.class
+com\kosinza\common\entity\ProductCategory.class
+com\kosinza\common\entity\ProductInfo.class
+com\kosinza\common\entity\OrderDetail.class
+com\kosinza\common\dao\UserInfoDao.class
+com\kosinza\common\dao\ProductInfoDao.class
+com\kosinza\common\entity\UserInfo.class
+com\kosinza\common\entity\OrderMaster.class

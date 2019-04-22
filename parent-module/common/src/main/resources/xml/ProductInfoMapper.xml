@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kosinza.common.dao.ProductInfoDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kosinza.common.entity.ProductInfo">
+        <id column="product_id" property="productId" />
+        <result column="product_name" property="productName" />
+        <result column="product_price" property="productPrice" />
+        <result column="product_stock" property="productStock" />
+        <result column="product_description" property="productDescription" />
+        <result column="product_icon" property="productIcon" />
+        <result column="product_status" property="productStatus" />
+        <result column="category_type" property="categoryType" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        product_id AS productId, product_name AS productName, product_price AS productPrice, product_stock AS productStock, product_description AS productDescription, product_icon AS productIcon, product_status AS productStatus, category_type AS categoryType, create_time AS createTime, update_time AS updateTime
+    </sql>
+
+</mapper>

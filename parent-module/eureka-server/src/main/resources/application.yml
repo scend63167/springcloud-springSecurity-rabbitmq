@@ -1,0 +1,21 @@
+# 本身是注册中心，但是也需要注册，这里可以向自己注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    # 不在页面上显示当前 服务
+    register-with-eureka: false
+    # 为true时，可以启动，但报异常：Cannot execute request on any known server
+    fetch-registry: false
+# 当应用上线率过低时，eureka会启动保护机制，默认确定当前服务是开启的，开发 环境中尽量关闭（设置为false）
+  server:
+    enable-self-preservation: false
+# 服务名 ，很重要 ，后期 config 配置中心会以 服务名为标识找对应的 服务
+spring:
+  application:
+    name: eureka
+  freemarker:
+    prefer-file-system-access: true
+# 设置当前项目端口号
+server:
+  port: 8761
